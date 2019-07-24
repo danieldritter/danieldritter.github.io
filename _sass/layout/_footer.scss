@@ -1,35 +1,42 @@
-footer {
-  padding: 2.8125rem 0;
-  border-top: 1px solid #f0f0f0;
-  text-align: center;
-  font-size: 0.875rem;
-  color: rgba(33,33,33,0.6);
+///
+/// Forty by HTML5 UP
+/// html5up.net | @ajlkn
+/// Free for personal and commercial use under the CCA 3.0 license (html5up.net/license)
+///
 
-  a {
-    color: rgba(33,33,33,0.6);
-    border-bottom: 0;
+/* Footer */
 
-    &:hover {
-      color: $primary;
-      border-bottom: 0;
-    }
-  }
-}
+	#footer {
+		.copyright {
+			font-size: 0.8em;
+			list-style: none;
+			padding-left: 0;
 
-.social {
-  display: flex;
-  justify-content: space-around;
-  align-items: center;
-  max-width: 200px;
-  margin: 0 auto 25px;
-}
+			li {
+				border-left: solid 1px _palette(border);
+				color: _palette(fg-light);
+				display: inline-block;
+				line-height: 1;
+				margin-left: 1em;
+				padding-left: 1em;
 
-.social__link:not(:last-child) {
-  margin-right: 1.125rem;
-}
+				&:first-child {
+					border-left: 0;
+					margin-left: 0;
+					padding-left: 0;
+				}
+			}
+		}
 
-.social__icon {
-  fill: currentColor;
-  height: 1.5rem;
-  width: 1.5rem;
-}
+		@include breakpoint(xsmall) {
+			.copyright {
+				li {
+					display: block;
+					border-left: 0;
+					margin-left: 0;
+					padding-left: 0;
+					line-height: inherit;
+				}
+			}
+		}
+	}

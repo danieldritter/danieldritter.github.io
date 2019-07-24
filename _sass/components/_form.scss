@@ -1,92 +1,224 @@
-input,
-textarea {
-  display: inline-block;
-  padding: 5px 0;
-  width: 100%;
-  border: 0;
-  border-bottom: 2px solid $border;
-  outline: none;
-  font-family: $font-stack;
-  background: transparent;
+///
+/// Forty by HTML5 UP
+/// html5up.net | @ajlkn
+/// Free for personal and commercial use under the CCA 3.0 license (html5up.net/license)
+///
 
-  &:focus {
-    border-color: $primary;
-    transition: border-color .25s;
-  }
-}
+/* Form */
 
-.form__input {
-  position: relative;
-  display: inline-block;
-  width: 100%;
-  margin-bottom: 35px;
+	form {
+		margin: 0 0 _size(element-margin) 0;
 
-  &::before {
-    content: "";
-    position: absolute;
-    bottom: 0;
-    left: 0;
-    width: 0;
-    height: 2px;
-    background: $primary;
-    z-index: 5;
-    transition: width .45s cubic-bezier(.694, .048, .335, 1);
-    transition-delay: .1s;
-  }
+		.field {
+			margin: 0 0 (_size(element-margin) * 1) 0;
 
-  &::after {
-    content: "";
-    position: absolute;
-    bottom: 0;
-    left: 0;
-    width: 0;
-    height: 2px;
-    background: $secondary;
-    z-index: 4;
-    transition: width .45s cubic-bezier(.694, .048, .335, 1);
-  }
+			&.half {
+				width: 50%;
+				float: left;
+				padding: 0 0 0 (_size(element-margin) * 1 * 0.5);
 
-  &:hover::after,
-  :focus::after,
-  :active::after {
-    width: 100%;
-  }
+				&.first {
+					padding: 0 (_size(element-margin) * 1 * 0.5) 0 0;
+				}
+			}
+		}
 
-  &:hover::before,
-  :focus::before,
-  :active::after {
-    width: 100%;
-  }
+		> .actions {
+			margin: (_size(element-margin) * 1.25) 0 0 0 !important;
+		}
 
-  &.error {
-    &:hover::after,
-    :focus::after,
-    :active::after {
-      width: 0%;
-    }
+		@include breakpoint(small) {
+			.field {
+				margin: 0 0 (_size(element-margin) * 0.75) 0;
 
-    &:hover::before,
-    :focus::before,
-    :active::after {
-      width: 0%;
-    }
-  }
-}
+				&.half {
+					padding: 0 0 0 (_size(element-margin) * 0.75 * 0.5);
 
-.error {
-  input {
-    border-bottom-color: $error;
-  }
+					&.first {
+						padding: 0 (_size(element-margin) * 0.75 * 0.5) 0 0;
+					}
+				}
+			}
 
-  textarea {
-    border-bottom-color: $error;
-  }
-}
+			> .actions {
+				margin: (_size(element-margin) * 1) 0 0 0 !important;
+			}
+		}
 
-.error-data {
-  color: $error;
-  font-size: 14px;
-  position: absolute;
-  left: 0;
-  bottom: -21px;
-}
+		@include breakpoint(xsmall) {
+			.field {
+				&.half {
+					width: 100%;
+					float: none;
+					padding: 0;
+
+					&.first {
+						padding: 0;
+					}
+				}
+			}
+		}
+	}
+
+	label {
+		color: _palette(fg-bold);
+		display: block;
+		font-size: 0.8em;
+		font-weight: _font(weight-bold);
+		letter-spacing: _font(letter-spacing-alt);
+		margin: 0 0 (_size(element-margin) * 0.5) 0;
+		text-transform: uppercase;
+	}
+
+	input[type="text"],
+	input[type="password"],
+	input[type="email"],
+	input[type="tel"],
+	select,
+	textarea {
+		@include vendor('appearance', 'none');
+		background: _palette(border-bg);
+		border: none;
+		border-radius: 0;
+		color: inherit;
+		display: block;
+		outline: 0;
+		padding: 0 1em;
+		text-decoration: none;
+		width: 100%;
+
+		&:invalid {
+			box-shadow: none;
+		}
+
+		&:focus {
+			border-color: _palette(highlight);
+			box-shadow: 0 0 0 2px _palette(highlight);
+		}
+	}
+
+	.select-wrapper {
+		@include icon;
+		display: block;
+		position: relative;
+
+		&:before {
+			color: _palette(border);
+			content: '\f078';
+			display: block;
+			height: _size(element-height);
+			line-height: _size(element-height);
+			pointer-events: none;
+			position: absolute;
+			right: 0;
+			text-align: center;
+			top: 0;
+			width: _size(element-height);
+		}
+
+		select::-ms-expand {
+			display: none;
+		}
+	}
+
+	input[type="text"],
+	input[type="password"],
+	input[type="email"],
+	select {
+		height: _size(element-height);
+	}
+
+	textarea {
+		padding: 0.75em 1em;
+	}
+
+	input[type="checkbox"],
+	input[type="radio"], {
+		@include vendor('appearance', 'none');
+		display: block;
+		float: left;
+		margin-right: -2em;
+		opacity: 0;
+		width: 1em;
+		z-index: -1;
+
+		& + label {
+			@include icon;
+			color: _palette(fg);
+			cursor: pointer;
+			display: inline-block;
+			font-weight: _font(weight);
+			padding-left: (_size(element-height) * 0.6) + 1em;
+			padding-right: 0.75em;
+			position: relative;
+
+			&:before {
+				background: _palette(border-bg);
+				content: '';
+				display: inline-block;
+				height: (_size(element-height) * 0.6);
+				left: 0;
+				letter-spacing: 0;
+				line-height: (_size(element-height) * 0.575);
+				position: absolute;
+				text-align: center;
+				top: 0;
+				width: (_size(element-height) * 0.6);
+			}
+		}
+
+		&:checked + label {
+			&:before {
+				background: _palette(fg-bold);
+				border-color: _palette(highlight);
+				content: '\f00c';
+				color: _palette(bg);
+			}
+		}
+
+		&:focus + label {
+			&:before {
+				box-shadow: 0 0 0 2px _palette(highlight);
+			}
+		}
+	}
+
+	input[type="checkbox"] {
+		& + label {
+			&:before {
+			}
+		}
+	}
+
+	input[type="radio"] {
+		& + label {
+			&:before {
+				border-radius: 100%;
+			}
+		}
+	}
+
+	::-webkit-input-placeholder {
+		color: _palette(fg-light) !important;
+		opacity: 1.0;
+	}
+
+	:-moz-placeholder {
+		color: _palette(fg-light) !important;
+		opacity: 1.0;
+	}
+
+	::-moz-placeholder {
+		color: _palette(fg-light) !important;
+		opacity: 1.0;
+	}
+
+	:-ms-input-placeholder {
+		color: _palette(fg-light) !important;
+		opacity: 1.0;
+	}
+
+	.formerize-placeholder {
+		color: _palette(fg-light) !important;
+		opacity: 1.0;
+	}
