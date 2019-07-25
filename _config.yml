@@ -1,8 +1,8 @@
 # site settings
-title: Daniel Ritter's Personal Website
+title: Home
 subtitle: by HTML5 UP
 email: danieldritter1@gmail.com
-description: Personal Website for Daniel Ritter
+description: Daniel Ritter
 baseurl: "" # the subpath of your site, e.g. /blog
 url: https://danieldritter.github.io
 author: Daniel Ritter
@@ -11,7 +11,7 @@ city: Nashville
 state: TN
 zip_code: 55555
 country: United States of America
-phone: (716) 555-5555
+phone: (214) 226-4980
 
 # homepage tiles
 tiles-source: pages # accepts "posts" or "pages"
@@ -19,8 +19,8 @@ tiles-count: 6
 
 # social settings
 500px_url:
-facebook_url:
-github_url:
+facebook_url: https://www.facebook.com/daniel.ritter.3958
+github_url: https://github.com/danieldritter
 gitlab_url: https://gitlab.com/u/andrewbanchich
 googleplus_url: https://plus.google.com/u/0/+AndrewBanchich
 instagram_url: https://instagram.com
