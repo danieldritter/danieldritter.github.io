@@ -3,8 +3,8 @@ title: Daniel Ritter's Personal Website
 subtitle: by HTML5 UP
 email: danieldritter1@gmail.com
 description: Personal Website for Daniel Ritter
-baseurl: "/forty-jekyll-theme" # the subpath of your site, e.g. /blog
-url: danieldritter.github.io
+baseurl: "" # the subpath of your site, e.g. /blog
+url: https://danieldritter.github.io
 author: Daniel Ritter
 street_address: 1234 Somewhere Road
 city: Nashville
