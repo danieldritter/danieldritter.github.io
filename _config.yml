@@ -1,33 +1,33 @@
 # site settings
-title: Home
-subtitle: by HTML5 UP
+title: Daniel Ritter
+subtitle: Personal and Portfolio Website
 email: danieldritter1@gmail.com
-description: Daniel Ritter
+description:
 baseurl: "" # the subpath of your site, e.g. /blog
 url: https://danieldritter.github.io
 author: Daniel Ritter
-street_address: 1234 Somewhere Road
-city: Nashville
-state: TN
-zip_code: 55555
+street_address: 90 Thayer Street
+city: Providence
+state: RI
+zip_code: 02912
 country: United States of America
 phone: (214) 226-4980
 
 # homepage tiles
 tiles-source: pages # accepts "posts" or "pages"
-tiles-count: 6
+tiles-count: 12
 
 # social settings
 500px_url:
 facebook_url: https://www.facebook.com/daniel.ritter.3958
 github_url: https://github.com/danieldritter
-gitlab_url: https://gitlab.com/u/andrewbanchich
-googleplus_url: https://plus.google.com/u/0/+AndrewBanchich
+gitlab_url: https://gitlab.com/danieldritter?nav_source=navbar
+googleplus_url:
 instagram_url: https://instagram.com
-linkedin_url: https://www.linkedin.com/in/andrew-banchich-a4ba1195
+linkedin_url: https://www.linkedin.com/in/danielritter12/
 pinterest_url:
 slack_url:
-twitter_url: https://twitter.com/andrewbanchich
+twitter_url:
 
 # build settings
 markdown: kramdown

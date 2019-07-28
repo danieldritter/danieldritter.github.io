@@ -3,13 +3,16 @@ title: Landing
 layout: landing
 description: 'Lorem ipsum dolor sit amet nullam consequa<br />sed veroeros. tempus adipiscing nulla.'
 image: assets/images/pic07.jpg
-nav-menu: true
+nav-menu: false
+show_tile: false
 ---
 
 <!-- Main -->
+
 <div id="main">
 
 <!-- One -->
+
 <section id="one">
 	<div class="inner">
 		<header class="major">
@@ -20,6 +23,7 @@ nav-menu: true
 </section>
 
 <!-- Two -->
+
 <section id="two" class="spotlights">
 	<section>
 		<a href="generic.html" class="image">
@@ -72,6 +76,7 @@ nav-menu: true
 </section>
 
 <!-- Three -->
+
 <section id="three">
 	<div class="inner">
 		<header class="major">

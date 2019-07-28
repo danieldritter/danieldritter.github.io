@@ -8,4 +8,4 @@ author: null
 show_tile: false
 ---
 
-Nullam et orci eu lorem consequat tincidunt vivamus et sagittis libero. Mauris aliquet magna magna sed nunc rhoncus pharetra. Pellentesque condimentum sem. In efficitur ligula tate urna. Maecenas laoreet massa vel lacinia pellentesque lorem ipsum dolor. Nullam et orci eu lorem consequat tincidunt. Vivamus et sagittis libero. Mauris aliquet magna magna sed nunc rhoncus amet pharetra et feugiat tempus.
+I'm originally from Dallas, Texas, and currently go to school in Providence, Rhode Island. I'm a junior at Brown University studying Computer Science and Political Science. Within Computer Science, I'm particularly interested in machine learning and artificial intelligence, and within Political Science, I'm specializing in International Relations. In my spare time, I help produce a lot of musical theater at Brown and play classical and jazz piano. I'm working this summer for Perspectum Diagnostics, a biotech firm in Oxford, England, helping them to apply deep learning methods to medical imaging problems, such as automated analysis of digital pathology data.
