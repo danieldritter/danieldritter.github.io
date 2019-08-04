@@ -22,95 +22,74 @@
     <!-- Wrapper -->
 <div id="wrapper">
 
-<!-- Header -->
-<header id="header">
-	<a href="http://localhost:4000//" class="logo"><strong>Daniel Ritter</strong> <span>Personal and Portfolio Website</span></a>
-	<nav>
-		<a href="#menu">Menu</a>
-	</nav>
-</header>
+	<!-- Header -->
+	<header id="header" >
+		<a href="http://localhost:4000//" class="logo"><strong>Daniel Ritter</strong> <span>Personal and Portfolio Website</span></a>
+		<nav>
+			<a href="#menu">Menu</a>
+		</nav>
+	</header>
 
-<!-- Menu -->
-<nav id="menu">
-	<ul class="links">
-        
-		    
-		
-		    
-		
-		    
-		
-		    
-		
-		    
-		        <li><a href="http://localhost:4000//">Home</a></li>
-	    	
-		
-		    
-		
-		    
-		
-		    
-		
-		    
-		
-		    
-		
-		    
-		
-		
-		    
-		
-		    
-		        <li><a href="http://localhost:4000/all_posts.html">All posts</a></li>
-		    
-		
-		    
-		        <li><a href="http://localhost:4000/elements.html">Elements</a></li>
-		    
-		
-		    
-		
-		    
-		
-		    
-		
-		    
-		        <li><a href="http://localhost:4000/links.html">Links</a></li>
-		    
-		
-		    
-		
-		    
-		        <li><a href="http://localhost:4000/projects.html">Projects</a></li>
-		    
-		
-		    
-		        <li><a href="http://localhost:4000/research.html">Research</a></li>
-		    
-		
-		    
-		        <li><a href="http://localhost:4000/work.html">Work</a></li>
-		    
-		
-	</ul>
-	<ul class="actions vertical">
-		<li><a href="#" class="button special fit">Get Started</a></li>
-		<li><a href="#" class="button fit">Log In</a></li>
-	</ul>
-</nav>
- <section id="one">
-  <div class="inner">
-    <h2>Image Analysis Intern at Perspectum Diagnostics</h2>
+	<!-- Menu -->
+	<nav id="menu">
+		<ul class="links">
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			<li><a href="http://localhost:4000/projects.html">Projects</a></li>
+			
+			
+			
+			<li><a href="http://localhost:4000/research.html">Research</a></li>
+			
+			
+			
+			<li><a href="http://localhost:4000/work.html">Work</a></li>
+			
+			
+		</ul>
+		<ul class="actions vertical">
+			<li><a href="index.html" class="button special fit">Home Page</a></li>
+		</ul>
+	</nav> <section id="one">
+<div class="inner">
+  <header class="major">
+    <h1>Work</h1>
+  </header>
   </div>
   <div class="inner">
-    <h2>Teaching Assistant for CS1470(Deep Learning)</h2>
+    <h2>Image Analysis Intern at Perspectum Diagnostics: June-August(2019)</h2>
+    <p>Perspectum Diagnostics is a biotech company based in Oxford, England. They work primarily with medical images(MRI, CT, digitized biopsy) and apply technological
+    solutions, often machine learning or deep learning based, to provide quantitative metrics and measurements of disease or disease-correlated quantities(e.g. iron levels
+    in the liver). As an intern on the Image Analysis team, working partly at their office in San Francisco and partly at their Oxford office, I was helping develop methods for applying deep learning techniques to digital pathology slides. Initially, I worked on the issue of nuclei segmentation. Given some biopsy image, how can you segment all cell nuclei in that image? In my case, the use of solving this problem was
+    to measure inflammation in the liver. When I began working, they already had a basic solution in place using a U-Net, a kind of fully convolutional neural network
+    designed for biomedical imaging segmentation. However, this approach had serious problems misclassifying overlapping or nearly touching nuclei. Areas of inflammation
+    are often densely packed with nuclei, so this problem becomes even more severe in cases where measuring inflammation and segmenting nuclei properly is the most critical.
+    I implemented, trained, and tested a new approach, using a MaskRCNN architecture, which was able to individually identify and segment nuclei, even in cases where they are close or overlapping. I also performed several extensive comparison/ablation tests between both the U-Net and MaskRCNN, calculating similarity metrics, applying
+    various image preprocessing methods, and comparing different forms of data augmentation, to determine which areas each approach excels in, allowing
+    for the potential combination of the two in the future into a more robust predictive method.</p>
   </div>
   <div class="inner">
-    <h2>SAT Tutor</h2>
+    <h2>Teaching Assistant for CS1470(Deep Learning): Fall Semester(2019)</h2>
+    In the fall of 2019, I will be a Teaching Assistant for my university's Deep Learning course,
+    teaching basic concepts of deep learning including convolutional neural networks, RNNs/LSTMs,
+    GANs, and basic reinforcement learning(A2C). My responsibilities will include holding TA office hours, running supplemental labs, and
+    helping to create and grade assignments.
   </div>
   <div class="inner">
-    <h2>Publications Assistant at Texas Digestive Disease Consultants</h2>
+    <h2>Publications Assistant at Texas Digestive Disease Consultants: June-August(2018)</h2>
+    <p>As a Publications Assistant, I assisted in creating financial templates based on clinical drug trial protocols and agreements, which were used later to request payments from pharmaceutical companies. I also entered and collected data for both internal practice research projects and research projects funded/run by pharmaceutical companies, as well as helping to generate publications for presentation at various national and international gastrointestinal medical conferences.</p>
   </div>
 </section>
  <!-- Contact -->
@@ -156,21 +135,21 @@
 					<span class="icon alt fa-home"></span>
 					<h3>Address</h3>
 					<span>
-					
-					    90 Thayer Street<br />
-					
-					
-					    Providence,
-					
-					
-					    RI 
-					
-					
-					    02912<br />
-					
-					
-					    United States of America
-					
+						
+						90 Thayer Street<br />
+						
+						
+						Providence,
+						
+						
+						RI
+						
+						
+						02912<br />
+						
+						
+						United States of America
+						
 					</span>
 				</div>
 			</section>
@@ -179,50 +158,43 @@
 </section>
 
 <!-- Footer -->
-	<footer id="footer">
-		<div class="inner">
-			<ul class="icons">
-				
-				
-				
-				<li><a href="https://www.facebook.com/daniel.ritter.3958" class="icon alt fa-facebook" target="_blank"><span class="label">Facebook</span></a></li>
-				
-				
-				<li><a href="https://instagram.com" class="icon alt fa-instagram" target="_blank"><span class="label">Instagram</span></a></li>
-				
-				
-				
-				
-				<li><a href="https://gitlab.com/danieldritter?nav_source=navbar" class="icon alt fa-gitlab" target="_blank"><span class="label">GitLab</span></a></li>
-				
-				
-				<li><a href="https://github.com/danieldritter" class="icon alt fa-github" target="_blank"><span class="label">GitHub</span></a></li>
-				
-				
-				
-				<li><a href="https://www.linkedin.com/in/danielritter12/" class="icon alt fa-linkedin" target="_blank"><span class="label">LinkedIn</span></a></li>
-				
-			</ul>
-			<ul class="copyright">
-				<li>&copy; Daniel Ritter Personal and Portfolio Website</li>
-				<li>Design: <a href="https://html5up.net" target="_blank">HTML5 UP</a></li>
-				<li>Jekyll integration: <a href="http://andrewbanchi.ch" target="_blank">Andrew Banchich</a></li>
-
-			</ul>
-		</div>
-	</footer>
+<footer id="footer">
+	<div class="inner">
+		<ul class="icons">
+			
+			
+			
+			<li><a href="https://www.facebook.com/daniel.ritter.3958" class="icon alt fa-facebook" target="_blank"><span class="label">Facebook</span></a></li>
+			
+			
+			<li><a href="https://instagram.com" class="icon alt fa-instagram" target="_blank"><span class="label">Instagram</span></a></li>
+			
+			
+			
+			
+			<li><a href="https://gitlab.com/danieldritter?nav_source=navbar" class="icon alt fa-gitlab" target="_blank"><span class="label">GitLab</span></a></li>
+			
+			
+			<li><a href="https://github.com/danieldritter" class="icon alt fa-github" target="_blank"><span class="label">GitHub</span></a></li>
+			
+			
+			
+			<li><a href="https://www.linkedin.com/in/danielritter12/" class="icon alt fa-linkedin" target="_blank"><span class="label">LinkedIn</span></a></li>
+			
+		</ul>
+	</div>
+</footer>
 
 </div>
 
 <!-- Scripts -->
-	<script src="http://localhost:4000/assets/js/jquery.min.js"></script>
-	<script src="http://localhost:4000/assets/js/jquery.scrolly.min.js"></script>
-	<script src="http://localhost:4000/assets/js/jquery.scrollex.min.js"></script>
-	<script src="http://localhost:4000/assets/js/skel.min.js"></script>
-	<script src="http://localhost:4000/assets/js/util.js"></script>
-	<!--[if lte IE 8]><script src="http://localhost:4000/assets/js/ie/respond.min.js"></script><![endif]-->
-	<script src="http://localhost:4000/assets/js/main.js"></script>
-
+<script src="http://localhost:4000/assets/js/jquery.min.js"></script>
+<script src="http://localhost:4000/assets/js/jquery.scrolly.min.js"></script>
+<script src="http://localhost:4000/assets/js/jquery.scrollex.min.js"></script>
+<script src="http://localhost:4000/assets/js/skel.min.js"></script>
+<script src="http://localhost:4000/assets/js/util.js"></script>
+<!--[if lte IE 8]><script src="http://localhost:4000/assets/js/ie/respond.min.js"></script><![endif]-->
+<script src="http://localhost:4000/assets/js/main.js"></script>
 
 </body>
 

@@ -2,7 +2,7 @@
 layout: allposts
 title: All posts
 landing-title: 'All posts'
-nav-menu: true
+nav-menu: False
 description: null
 image: null
 author: null

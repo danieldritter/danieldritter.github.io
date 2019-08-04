@@ -5,15 +5,65 @@ nav-menu: true
 ---
 
 <section id="one">
+<div class="inner">
+  <header class="major">
+    <h1>Research</h1>
+  </header>
+  <p>Below are brief descriptions of some of the research projects I have worked on as an undergraduate.</p>
+  </div>
   <div class="inner">
     <h2>Affordable Robotic Intelligence For Elderly Support</h2>
-    Worked to improve Hasbro's Joy For All Companion pets
-    <img src="/assets/images/hasbro_pet.jpeg" alt="One of Hasbro's Joy For All Companion Pets">
-    </div>
-    </section>
+        <p>
+        <img class="imbox" src="/assets/images/hasbro_pet.jpeg" alt="One of Hasbro's Joy For All Companion Pets">
+        In 2018, a subsidiary of the Hasbro toy company called Ageless Innovations
+        partnered with my university in a project called ARIES(Affordable Robotic
+        Intelligence for Eldery Support). The goal of this project was to take one
+        of Ageless Innovations' products, a robotic dog(pictured to the right) meant to serve as a substitute
+        pet for elderly people who couldn't care for a real pet, and improve it's
+        capacity for user interaction. I've been working with a team of other undergraduates since last
+        year to try and solve this problem. Our current approach has been to try and use room-mapping
+        software(SLAM, specifically ORB-SLAM2) and deep-learning object detection(YOLO v3) to
+        allow the robot to detect and localize objects within a room, and then lead a user to those
+        objects. The end goal of this approach would be to have a robot that could detect an object of
+        interest to an elderly user(say their glasses or keys) and then lead them to that object
+        using audio or motion cues('hot or cold' style barking, rotating its head towards the object, etc.).
+        This project presents a great number of unique challenges. First, both the SLAM software and object
+        detection software we are using are very computationally intensive. We are attempting to run these on a raspberry pi at the moment(as a prototype for whatever kind of chip would be in the final product), and
+        the constraints on RAM and processing power were serious obstacles because of that. As an illustrative
+        example, compiling OpenCV, a prerequisite software package for our SLAM software, takes approximately
+        3 hours natively on a raspberry pi, with the SLAM software itself taking an additional 2. I had to learn a lot about cross-compilation, and specifically how to use Docker containers to cross-compile executables for a raspberry pi, to solve this problem and avoid obscenely long compilation times. On the object detection side of things, we suffered from more runtime issues than compilation ones. While trying to detect objects from
+        the pi alone, we would routinely get only 1-2 frames processed every 5 seconds or so, which isn't remotely fast enough for our purposes. To improve this, we added a Movidius GPU stick to our pi, a small graphics card you can plug in via USB. This allowed us to offload and parallelize much of the object detection computation, speeding up our detection to around 3-4 FPS. Working on this project gave me the opportunity to learn a great deal about working with constrained processing power and memory, and taught me to program and design everything I did much more carefully because of that. Plans for the project this coming year are further optimizing all the software to run efficiently on the raspberry pi, and getting a prototype pi installed in one of the robots to begin running basic tests.
+        </p>
+  </div>
+</section>
 
 <section id="two">
   <div class="inner">
-    <h2>Starcraft II ExAI Project</h2>
-    </div>
-    </section>
+  <h2>Starcraft II ExAI Project</h2>
+  <p>
+  <img class="imbox" src="/assets/images/SC2Logo.jpeg" alt="Starcraft II Logo" style="float:left">
+  In the fall of 2018, I joined a research team at my school as part of a broader DARPA project called ExAI. The purpose of this project is to try and develop
+  more explainable reinforcement learning systems, or to better explain current models. This project, across all the teams in the country,
+  uses the real-time strategy game Starcraft II as a common test bed for experiments. Our work over the past year has been widely varied.
+  Initially, we built a distributed actor critic framework(A2C) to play several Starcraft mini-games, mostly to get an understanding of how to write
+  agents that will work with the Starcraft II API, and also to have an initial baseline to compare later models against. After successfuly training on a
+  few of the most simple mini games, we extended our framework to learn on some of the more complex ones(<a href="https://github.com/deepmind/pysc2/blob/master/docs/mini_games.md">list of the minigames here</a>). With this baseline established, we started experimenting with different kinds of architectures and reward schemes to
+  see if we could induce specific behaviors or strategies in our learned agent. For example, a common strategy in Starcraft II is 'rotating', where you take a unit
+  with low health and move it behind the rest of your units to protect it. We built a custom minigame(which we called Stalkers Vs. Roaches)
+  and altered the structure of the rewards and observations given to our agent to try and get this 'rotating' behavior to appear, reasoning that depending on the
+  kinds of changes we make to rewards and observation, we could potentially derive an explanation of where the rotation behavior comes from after the fact. This kind
+  of experimentation took up fall 2018 and the first part of the spring 2019 semester. Partway through that spring semester, we began to make more drastic changes to
+  our initial architecture, following two different approaches, each altering different copies of the original agent. One approach began to add in more elements of
+  relational reinforcement learning, adding in concepts like pointer networks and self-attention to allow the agent to learn relationships between entities in
+  the game rather than just optimizing an overall reward signal. These additions provide a great benefit to explainability, because the outputs and inner quantities
+  in pointer networks and especially in self attention can be easily visualized, and the visualizations can show, to some extent, where the agents 'focus' is. The other,
+  parallel approach was to try and include new kinds of reward systems, using logical propositions to determine the goal of the agent, rather than simply a positive or
+  negative reward signal. This approach is thought to be more explainable because if the agent is optimizing to complete some logical proposition instead of a scalar
+  value, you can then attribute an explanation to its actions from the components of the proposition, which you would not be able to do with a sequence of rewards in a standard reinforcement learning algorithm. Plans for work next year involve continuing both these tracks, and also attempting to find ways to perform 'interventions'
+  in the game, where you alter a single part of the environment and then see how the agent reacts to it. Interventions can be a powerful way to test counterfactuals
+  and to see the extent to which an agent is learning or simply memorizing. Working on this project, I've been able to develop a much deeper grasp of deep learning
+  and reinforcement learning concepts, and then been able to apply them to a large, complex problem using state of the art solutions and novel learning architectures.
+  It's been a fascinating learning experience and I'm excited to see what comes out of it in the coming year.
+  </p>
+</div>
+</section>

@@ -5,7 +5,8 @@ landing-title: 'Welcome to my Website'
 description: null
 image: null
 author: null
+nav-menu: false
 show_tile: false
 ---
 
-I'm originally from Dallas, Texas, and currently go to school in Providence, Rhode Island. I'm a junior at Brown University studying Computer Science and Political Science. Within Computer Science, I'm particularly interested in machine learning and artificial intelligence, and within Political Science, I'm specializing in International Relations. In my spare time, I help produce a lot of musical theater at Brown and play classical and jazz piano. I'm working this summer for Perspectum Diagnostics, a biotech firm in Oxford, England, helping them to apply deep learning methods to medical imaging problems, such as automated analysis of digital pathology data.
+I'm a Junior at Brown University, originally from Dallas, Texas, studying Computer Science and Political Science. Within Computer Science, I'm particularly interested in machine learning and artificial intelligence, and within Political Science, I'm specializing in International Relations. In my spare time, I help produce a lot of musical theater at Brown and play classical and jazz piano. I'm working this summer for Perspectum Diagnostics, a biotech firm in Oxford, England, helping them to apply deep learning methods to medical imaging problems, such as automated analysis of digital pathology data.
