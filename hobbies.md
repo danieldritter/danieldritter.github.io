@@ -30,7 +30,7 @@ nav-menu: true
 
 <div class="inner">
   <h2> Musical Theater</h2>
-  <div class="row" style="display:flex; justify-content:space-between; width:100%">
+  <div class="row" style="display:flex; justify-content:space-between;">
   <img style="flex:1" src="/assets/images/pippin.jpeg" alt="Poster for BUG's production of Pippin">
   <img style="flex:1" src="/assets/images/into_the_woods.jpg" alt="Poster for BUG's production of the 25th Annual Putnam County Spelling Bee">
   <img style="flex:1" src="/assets/images/bugs.png" alt="poster for Brown University Gilbert and Sullivan">
