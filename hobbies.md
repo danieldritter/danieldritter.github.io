@@ -30,9 +30,11 @@ nav-menu: true
 
 <div class="inner">
   <h2> Musical Theater</h2>
+  <div class="row">
   <img class="imbox" src="/assets/images/pippin.jpeg" width="462" height="306" alt="Poster for BUG's production of Pippin">
   <img class="imbox" src="/assets/images/into_the_woods.jpg" width="462" height="306" alt="Poster for BUG's production of the 25th Annual Putnam County Spelling Bee">
   <img class="imbox" src="/assets/images/bugs.png" width="462" height="306" alt="poster for Brown University Gilbert and Sullivan">
+  </div>
   <p>
   I've been involved in a number of different musical productions since I started college. I've performed in the pit orchestra's for 4 different shows, and music directed an original show last spring as well. I'm also on the producing board for Brown University Gilbert and Sullivan, a student group that puts on a large ensemble musical every semester.
   </p>
