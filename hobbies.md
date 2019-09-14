@@ -36,7 +36,7 @@ nav-menu: true
   <img width="461" height="691" src="/assets/images/bugs.png" alt="poster for Brown University Gilbert and Sullivan">
   </div>
   <p>
-  I've been involved in a number of different musical productions since I started college. I've performed in the pit orchestra's for 4 different shows, and music directed an original show last spring as well. I'm also on the producing board for Brown University Gilbert and Sullivan, a student group that puts on a large ensemble musical every semester.
+  I've been involved in a number of different musical productions since I started college. I've performed in the pit orchestras for 4 different shows, and music directed an original show last spring as well. I'm also on the producing board for Brown University Gilbert and Sullivan, a student group that puts on a large ensemble musical every semester.
   </p>
   </div>
 
