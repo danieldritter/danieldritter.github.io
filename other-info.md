@@ -15,7 +15,6 @@ nav-menu: True
 <h2> Publications and Awards </h2>
 <p>
 <ul>
-
 <li>Fatty Pancreas as A Reversible Cause of Exocrine Pancreatic Insufficiency – 2018 ACG Conference, Philadelphia, PA – Dustin Kiker, MD, Tim Ritter, MD, Chris Fourment, MD, Bitaal Sadiq, BS, <strong>Daniel Ritter</strong></li>
 <li>
 (Manuscript awaiting publication): Computational pathology for the quantitative assessment of liver biopsy with relation to non-invasive imaging biomarkers - Goldfinger, MH., Olchanyi M.*, <strong>Ritter, D.*</strong>, Nicholls, RC., McDonald, N., Eddowes PJ, Gomez-Castaneda, E., Irving, B., Atkinson, D., Kendall, TJ., Brown, RM, Neil DAH, Hübscher, SG, Kelly, M., Brady, JM., Fallowfield, JA., Hirschfield, G., Banerjee, R., Fleming, K. (*These authors contributed equally to this manuscript)
@@ -30,6 +29,10 @@ Eagle Scout Award (Received 2016)
 
 <div class="inner">
 <h2> Files </h2>
+<ul>
+<li><a href="assets/pdfs/Daniel_Ritter_Resume_2019.pdf">Resume</a></li>
+<li><a href="https://drive.google.com/file/d/114gUuSkWXUGHNcSZ93B64JQ334gyi3D9/view?usp=sharing">Genomics Paper Presentation From Summer Internship</a></li>
+</ul>
 </div>
 
 </section>
