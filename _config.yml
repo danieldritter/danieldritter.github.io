@@ -1,15 +1,15 @@
 # site settings
 title: Daniel Ritter
-subtitle: Personal and Portfolio Website
+# subtitle: Personal and Portfolio Website
 email: danieldritter1@gmail.com
 description:
 baseurl: "" # the subpath of your site, e.g. /blog
 url: https://danieldritter.github.io
 author: Daniel Ritter
-street_address: 90 Thayer Street
-city: Providence
-state: RI
-zip_code: 02912
+street_address: 701 E. Bethel School Rd.
+city: Coppell
+state: TX
+zip_code: 75019
 country: United States of America
 phone: (214) 226-4980
 
