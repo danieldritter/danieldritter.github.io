@@ -20,7 +20,7 @@ title                    : "Daniel Ritter"
 title_separator          : "-"
 subtitle                 : ""
 name                     : "Daniel Ritter"
-description              : "Personal Website and Portfolio"
+description              : "Personal Website"
 url                      : "https://danieldritter.github.io"
 baseurl                  : "/"
 repository               : "danieldritter/danieldritter.github.io" 
@@ -104,7 +104,7 @@ analytics:
 author:
   name             : "Daniel Ritter"
   avatar           : "/assets/images/home_pic.JPG"
-  bio              : "Software Engineer at Harvard Medical School, Oxford MsC in Computer Science '22, Brown Computer Science and Political Science '21"
+  bio              : "Software Engineer in the Marks Lab at Harvard Medical School, Oxford MsC in Computer Science '22, Brown Computer Science and Political Science '21"
   location         : "Boston, Massachusetts"
   email            : "danieldritter1@gmail.com"
   links:
